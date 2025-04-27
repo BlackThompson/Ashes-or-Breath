@@ -6,7 +6,7 @@ public class CatAnimatorController : MonoBehaviour
 
     void Awake()
     {
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     public void SetWalking(bool isWalking)

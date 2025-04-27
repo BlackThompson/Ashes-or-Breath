@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CatController : MonoBehaviour
 {
-    public CatMovement movement;
-    public CatAnimatorController anim;
+    private CatMovement movement;
+    private CatAnimatorController animatorController;
 
     private enum CatState { Idle, Walking }
     private CatState currentState;
@@ -13,6 +13,8 @@ public class CatController : MonoBehaviour
 
     void Start()
     {
+        movement = GetComponent<CatMovement>();
+        animatorController = GetComponent<CatAnimatorController>();
         SwitchToIdle(); // 从Idle开始更自然
     }
 
@@ -25,7 +27,7 @@ public class CatController : MonoBehaviour
         switch (currentState)
         {
             case CatState.Idle:
-                anim.SetWalking(false);
+                animatorController.SetWalking(false);
                 if (stateTimer <= 0f)
                     SwitchToWalk();
                 break;
@@ -39,7 +41,7 @@ public class CatController : MonoBehaviour
                 }
 
                 movement.MoveTowards(currentDir);
-                anim.SetWalking(true);
+                animatorController.SetWalking(true);
 
                 if (stateTimer <= 0f)
                     SwitchToIdle();
