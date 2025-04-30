@@ -5,7 +5,7 @@ public class CatController : MonoBehaviour
     public CatMovement movement;
     public CatAnimatorController anim;
 
-    private enum CatState { Idle, Walking }
+    private enum CatState { Idle, Walking, Meowing }
     private CatState currentState;
 
     private Vector3 currentDir;
@@ -44,6 +44,9 @@ public class CatController : MonoBehaviour
                 if (stateTimer <= 0f)
                     SwitchToIdle();
                 break;
+            case CatState.Meowing:
+                SwitchToMeow();
+                break;
         }
     }
 
@@ -64,5 +67,15 @@ public class CatController : MonoBehaviour
         currentState = CatState.Walking;
         stateTimer = Random.Range(6f, 10f); // 走 3~6 秒
         ChooseNewDirection();
+    }
+    
+    void SwitchToMeow()
+    {
+        currentState = CatState.Meowing;
+        anim.SetMeowing();
+    }
+
+    public void Meow() {
+        currentState = CatState.Meowing;
     }
 }

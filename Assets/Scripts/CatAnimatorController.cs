@@ -18,4 +18,12 @@ public class CatAnimatorController : MonoBehaviour
     {
         animator.SetBool("isJumping", isJumping);
     }
+    
+    public void SetMeowing()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isMeowing", true);
+        animator.SetBool("isIdle", false);
+    }
 }
