@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd7b06f081af1c94b8c0034a19ad6aa7
+timeCreated: 1474460943
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 73777
+  packageName: Legacy Particle Pack
+  packageVersion: 4.0
+  assetPath: Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat
+  uploadId: 684565
