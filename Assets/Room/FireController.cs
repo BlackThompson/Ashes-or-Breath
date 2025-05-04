@@ -7,7 +7,7 @@ public class FireController : MonoBehaviour {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         Debug.Log("Count Down 10s");
-        Invoke("Fire", 10f);
+        Invoke("Fire", 10.0f);
     }
 
     void Fire() {
