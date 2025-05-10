@@ -20,8 +20,12 @@ MonoBehaviour:
     rid: 1989438179486466304
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Samples/Meta MR Utility Kit/74.0.2/Basic/MRUKBase.unity
+  - m_enabled: 1
+    m_path: Assets/Room/Museum.unity
+  - m_enabled: 1
+    m_path: Assets/Room/RewindSpace.unity
   m_ScriptingDefines:
   - 
   m_PlayerSettingsYaml:

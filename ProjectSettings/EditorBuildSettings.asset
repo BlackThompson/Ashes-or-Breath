@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Room/Museum.unity
+    path: Assets/Scene/SplashScene.unity
+    guid: e1b242ca5539d234bbe948a4a5235f50
+  - enabled: 1
+    path: Assets/Scene/Museum.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Room/RewindSpace.unity
+    path: Assets/Scene/RewindSpace.unity
     guid: a0314bf570886f4489164d932f460313
   - enabled: 0
     path: Assets/Samples/Meta MR Utility Kit/74.0.2/Basic/MRUKBase.unity
@@ -50,6 +53,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: f17ef9c0ef831a740a153361390550dd
+  - enabled: 0
+    path: Assets/Scene/Test/TextTest.unity
+    guid: 050a111cb3280594bb3de7342caf24ff
+  - enabled: 0
+    path: Assets/Scene/Test/TextTest2.unity
+    guid: 6cba803beccb16f48b0ab21c3496eaa5
+  - enabled: 1
+    path: Assets/Scene/MuseumFired.unity
+    guid: b6ee294d5cbedd14e81d684eb9e1fbbc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 67c1766f352103143a1faf62de2fa5ec, type: 2}

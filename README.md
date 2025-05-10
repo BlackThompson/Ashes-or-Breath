@@ -18,3 +18,14 @@ feat: 初步完成关卡UI框架
 git config --global core.editor '"D:\Programming\IDE\Microsoft VS Code\Code.exe"'
 ```
 
+# Todo
+## 1. Museum Scene
+- [x] (Important) Change door & paint location
+- [x] (Important) Add introduce audio
+- [x] (Important) Allow more time to interact with the scene before fire
+
+## 2. Reflect Scene
+- [x] Interactable bubbles (cube)
+- [x] Click and appear texts
+- [x] After all bubbles disappear $\rightarrow$ remind to comeback and choose again
+- [x] Jump back to the flame scene

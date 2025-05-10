@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SamplesInfoPanel
   - Cube
+  - Touchable
   layers:
   - Default
   - TransparentFX
